@@ -19,6 +19,10 @@ class ListNode {
 
 // 链表实现类
 class LinkedList {
+
+    private ListNode first;
+    private ListNode last;
+
     public ListNode getFirst() {
         return first;
     }
@@ -26,9 +30,6 @@ class LinkedList {
     public ListNode getLast() {
         return last;
     }
-
-    private ListNode first;
-    private ListNode last;
 
     // 链表是否为空
     public boolean isEmpty() {
