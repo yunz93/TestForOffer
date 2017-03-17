@@ -11,8 +11,8 @@ public class demo_08 {
     public static void main(String[] args) throws Exception {
         int[] arr1 = {3, 4, 5, 6, 7, 8, 0, 1, 2};
         int[] arr2 = {1, 0, 1, 1, 1};
-        System.out.println(searchForMin(arr1));
-        System.out.println(searchForMin(arr2));
+        System.out.println("最小元素为： " + searchForMin(arr1));
+        System.out.println("最小元素为： " + searchForMin(arr2));
     }
 
     private static int searchForMin(int[] arr) throws Exception {
@@ -43,7 +43,7 @@ public class demo_08 {
             // 如果中位元素大于首位元素
             if (arr[medium] > arr[first]) {
                 first = medium;
-            } else if (arr[medium] <= arr[last]) {
+            } else if (arr[medium] <= arr[last]) {   // 如果中位元素小于末位元素
                 last = medium;
             }
         }
